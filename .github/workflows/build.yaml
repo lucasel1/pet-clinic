@@ -21,6 +21,6 @@ jobs:
       # hier ist der Platz für die Konfiguration der Sonar Analyse
   
     - name: Compile, build and push
-      run: |
-        #### AUFGABE 3 COMPILE, DOCKER BUILD UND PUSH
-          # hier ist Platz für maven package und docker build
+      run: | 
+        mvn package
+        ocker build --tag lucasel1/swt2-test:latest -f Dockerfile .
