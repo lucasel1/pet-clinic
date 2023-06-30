@@ -21,6 +21,6 @@ jobs:
       # hier ist der Platz für die Konfiguration der Sonar Analyse
   
     - name: Compile, build and push
-      run: |
+      run: | 
         mvn package
         docker build --tag lucasel1/swt2-test:latest -f Dockerfile .
